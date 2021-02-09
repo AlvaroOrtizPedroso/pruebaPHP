@@ -86,8 +86,8 @@ public class MainActivity extends AppCompatActivity {
                 for (int i = 0; i < response.length(); i++) {
                     try {
                         jsonObject = response.getJSONObject(i);
-                        //editId.setText(jsonObject.getString("anuncio_id"));
-                        //editTitulo.setText(jsonObject.getString("titulo"));
+                        editId.setText(jsonObject.getString("anuncio_id"));
+                        editTitulo.setText(jsonObject.getString("titulo"));
                     } catch (JSONException e) {
                         Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
                     }
